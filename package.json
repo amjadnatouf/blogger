@@ -1,12 +1,13 @@
 {
-  "name": "porject_one",
+  "name": "blogger",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "json-server -H 192.168.1.42 -p 3009 -w ./data/data.json"
+    "start": "json-server -H 192.168.1.42 -p 3009 -w ./data/data.json",
+    "deploy": "sh deploy.sh"
   },
   "dependencies": {
     "axios": "^0.27.2",
