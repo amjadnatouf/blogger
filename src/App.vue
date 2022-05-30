@@ -1,10 +1,23 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div>
+    <AppHeader />
+    <div class="app-body">
+      <router-view />
+    </div>
+    <AppFooter />
+  </div>
 </template>
+<script>
+import AppHeader from "./components/global/appheader.vue";
+import AppFooter from "./components/global/appfooter.vue";
+export default {
+  name: "App",
+  components: {
+    AppHeader,
+    AppFooter,
+  },
+};
+</script>
 
 <style>
 #app {
@@ -13,6 +26,9 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+.app-body {
+  min-height: 1000px;
 }
 
 nav {
