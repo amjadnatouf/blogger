@@ -32,7 +32,8 @@ export default {
   data() {
     return {
       // apiURL: "http://localhost:3005/posts/",
-      apiURL: "http://192.168.1.42:3009/posts/",
+      // apiURL: "http://192.168.1.42:3009/posts/",
+      apiURL: "https://jsonplaceholder.typicode.com/posts/",
 
       mode: "",
     };
